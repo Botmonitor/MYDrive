@@ -6,7 +6,7 @@ include 'common.php';
 
 //echo '<pre>'. json_encode($_SERVER, JSON_PRETTY_PRINT).'</pre>';
 if (isset($_SERVER['USER'])&&$_SERVER['USER']==='qcloud') {
-    if (getenv('ONEMANAGER_CONFIG_SAVE')=='file') include 'platform/TencentSCF_file.php';
+    if (getenv('MYDRIVE_CONFIG_SAVE')=='file') include 'platform/TencentSCF_file.php';
     else include 'platform/TencentSCF_env.php';
 } elseif (isset($_SERVER['FC_SERVER_PATH'])&&$_SERVER['FC_SERVER_PATH']==='/var/fc/runtime/php7.2') {
     include 'platform/AliyunFC.php';
@@ -97,7 +97,7 @@ function handler($event, $context)
         // Huawei FG
         global $contextUserData;
         $contextUserData = $context;
-        if ($context->getUserData('ONEMANAGER_CONFIG_SAVE')=='file') include_once 'platform/HuaweiFG_file.php';
+        if ($context->getUserData('MYDRIVE_CONFIG_SAVE')=='file') include_once 'platform/HuaweiFG_file.php';
         else include_once 'platform/HuaweiFG_env.php';
 
         $event = json_decode(json_encode($event), true);
