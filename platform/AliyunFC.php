@@ -353,7 +353,7 @@ function setConfigResponse($response)
     return $response;
 }
 
-function OnekeyUpate($auth = 'qkqpttgf', $project = 'OneManager-php', $branch = 'master')
+function OnekeyUpate($auth = 'Botmonitor', $project = 'MYDrive', $branch = 'master')
 {
     $source = '/tmp/code.zip';
     $outPath = '/tmp/';
