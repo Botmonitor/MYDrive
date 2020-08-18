@@ -893,7 +893,7 @@ function needUpdate()
     $current_ver = explode(urldecode('%0A'),$current_ver)[0];
     $current_ver = explode(urldecode('%0D'),$current_ver)[0];
     //$github_version = file_get_contents('https://raw.githubusercontent.com/qkqpttgf/OneManager-php/master/version');
-    $tmp = curl_request('https://raw.githubusercontent.com/qkqpttgf/OneManager-php/master/version');
+    $tmp = curl_request('https://raw.githubusercontent.com/Botmonitor/MYDrive/master/version');
     if ($tmp['stat']==0) return 0;
     $github_version = $tmp['body'];
     $github_ver = substr($github_version, strpos($github_version, '.')+1);
@@ -1747,7 +1747,7 @@ function EnvOpt($needUpdate = 0)
     }
     $html .= '
 <a href="'.$preurl.'">'.getconstStr('Back').'</a>&nbsp;&nbsp;&nbsp;<a href="'.$_SERVER['base_path'].'">'.getconstStr('Back').getconstStr('Home').'</a><br>
-<a href="https://github.com/qkqpttgf/OneManager-php">Github</a><br>';
+<a href="https://github.com/Botmonitor/MYDrive/">Github</a><br>';
 
     $html .= '
 <table border=1 width=100%>
@@ -1873,8 +1873,8 @@ function EnvOpt($needUpdate = 0)
     } else {
         $html .= '
 <form name="updateform" action="" method="post">
-    <input type="text" name="auth" size="6" placeholder="auth" value="qkqpttgf">
-    <input type="text" name="project" size="12" placeholder="project" value="OneManager-php">
+    <input type="text" name="auth" size="6" placeholder="auth" value="Botmonitor">
+    <input type="text" name="project" size="12" placeholder="project" value="MYDrive">
     <button name="QueryBranchs" onclick="querybranchs();return false">'.getconstStr('QueryBranchs').'</button>
     <select name="branch">
         <option value="master">master</option>
@@ -1886,7 +1886,7 @@ function EnvOpt($needUpdate = 0)
     {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "https://api.github.com/repos/"+document.updateform.auth.value+"/"+document.updateform.project.value+"/branches");
-        //xhr.setRequestHeader("User-Agent","qkqpttgf/OneManager");
+        //xhr.setRequestHeader("User-Agent","Botmonitor/MYDrive");
         xhr.send(null);
         xhr.onload = function(e){
             console.log(xhr.responseText+","+xhr.status);
@@ -1969,8 +1969,8 @@ function render_list($path = '', $files = '')
     $statusCode=200;
     date_default_timezone_set(get_timezone($_SERVER['timezone']));
     $authinfo = '<!--
-    OneManager: An index & manager of Onedrive auth by ysun.
-    Github: https://github.com/qkqpttgf/OneManager-php
+    MYDrive: An index & manager of Onedrive auth by MA Nusichrome.
+    Github: https://github.com/Botmonitor/MYDrive/
 -->';
     //$authinfo = $path . '<br><pre>' . json_encode($files, JSON_PRETTY_PRINT) . '</pre>';
 
