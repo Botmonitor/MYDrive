@@ -177,7 +177,7 @@ $timezones = array(
     '5.5'=>'Asia/Calcutta', //Asia/Colombo
     '6'=>'Asia/Dhaka',
     '6.5'=>'Asia/Rangoon', 
-    '7'=>'Asia/Bangkok', 
+    '7'=>'Asia/Jakarta', 
     '8'=>'Asia/Shanghai', 
     '9'=>'Asia/Tokyo', 
     '9.5'=>'Australia/Darwin', 
@@ -561,7 +561,7 @@ function filecache()
         if ( is_writable(__DIR__ . '/tmp/') ) $dir = __DIR__ . '/tmp/';
         if ( mkdir(__DIR__ . '/tmp/', 0777) ) $dir = __DIR__ . '/tmp/';
     }
-    $tag = __DIR__ . '/OneManager/' . $_SERVER['disktag'];
+    $tag = __DIR__ . '/MYDrive/' . $_SERVER['disktag'];
     while (strpos($tag, '/')>-1) $tag = str_replace('/', '_', $tag);
     if (strpos($tag, ':')>-1) {
         while (strpos($tag, ':')>-1) $tag = str_replace(':', '_', $tag);
@@ -892,7 +892,7 @@ function needUpdate()
     $current_ver = substr($current_ver, strpos($current_ver, '.')+1);
     $current_ver = explode(urldecode('%0A'),$current_ver)[0];
     $current_ver = explode(urldecode('%0D'),$current_ver)[0];
-    //$github_version = file_get_contents('https://raw.githubusercontent.com/qkqpttgf/OneManager-php/master/version');
+    //$github_version = file_get_contents('https://raw.githubusercontent.com/Botmonitor/MYDrive/master/version');
     $tmp = curl_request('https://raw.githubusercontent.com/Botmonitor/MYDrive/master/version');
     if ($tmp['stat']==0) return 0;
     $github_version = $tmp['body'];
@@ -2449,8 +2449,8 @@ function render_list($path = '', $files = '')
 
         $keywords = $n_path;
         if ($p_path!='') $keywords .= ', ' . $p_path;
-        if ($_SERVER['sitename']!='OneManager') $keywords .= ', ' . $_SERVER['sitename'] . ', OneManager';
-        else $keywords .= ', OneManager';
+        if ($_SERVER['sitename']!='MYDrive') $keywords .= ', ' . $_SERVER['sitename'] . ', MYDrive';
+        else $keywords .= ', MYDrive';
         $html = str_replace('<!--Keywords-->', $keywords, $html);
 
         if ($_GET['preview']) {
