@@ -1,5 +1,5 @@
 Install program first, then add onedrive in setup after login.  
-先安装程序，登录后在设置中添加onedrive。  
+Instal program terlebih dahulu, dan tambahkan onedrive ke pengaturan setelah masuk.
 
 # Deploy to Heroku  
 Official: https://heroku.com  
@@ -10,67 +10,67 @@ How to Install: Click the button [![Deploy](https://www.herokucdn.com/deploy/but
 
 # Deploy to Tencent Serverless Cloud Function (SCF 腾讯无服务器云函数)  
 Official: https://cloud.tencent.com/product/scf  
-DEMO:  无  
-注意：SCF新增限制，环境变量整体最大4KB，所以最多添加4个盘。  
+DEMO: Tidak ada
+Catatan: SCF memiliki batasan baru. Variabel lingkungan maksimum keseluruhan adalah 4KB, sehingga Anda dapat menambahkan hingga 4 disk.
 
-How to Install:  无  
+Cara Memasang: Tidak Ada
   
-添加网盘时，SCF反应不过来，会添加失败，请不要删除，再添加一次相同的就可以了。  
+Saat menambahkan disk jaringan, SCF tidak dapat merespons, dan penambahan akan gagal. Harap jangan hapus. Tambahkan yang sama lagi. 
 
 
-# Deploy to Virtual Private Server (VPS 或空间)  
-DEMO:  无  
+# Deploy to Virtual Private Server (VPS)  
+DEMO:  Tidak Ada
 How to Install:  
     1.Start web service on your server (httpd or other), make sure you can visit it.  
-    启动web服务器，确保你能访问到。  
+    Mulai server web dan pastikan Anda dapat mengaksesnya.
     2.Make the rewrite works, the rule is in .htaccess file, make sure any query redirect to index.php.  
-    开启伪静态(重写)功能，规则在.htaccess文件中，ngnix从里面复制，我们的目的是不管访问什么都让index.php来处理。  
+    Nyalakan fungsi pseudo-static (rewrite), aturan ada di file .htaccess, dan ngnix disalin darinya.Tujuan kita adalah membiarkan index.php menangani apa pun yang diakses.。  
     3.Upload code.  
-    上传好代码。  
+    Unggah kodenya. 
     4.Change the file config.php can be read&write (666 is suggested).  
-    让代码中的config.php文件程序可读写，推荐chmod 666 config.php。  
+    Untuk membuat program file config.php dalam kode tersebut dapat dibaca dan ditulis, direkomendasikan chmod 666 config.php.
     5.View the website in chrome or other.  
-    在浏览器中访问。  
+    Kunjungi di browser.  
 
 
 # Deploy to Huawei cloud Function Graph (FG 华为云函数工作流)  
 Official: https://console.huaweicloud.com/functiongraph/  
-DEMO:  无  
-注意：FG中，环境变量整体大小为2KB，所以最多添加2个盘。  
+DEMO: Tidak
+Catatan: Di FG, ukuran keseluruhan variabel lingkungan adalah 2KB, jadi tambahkan paling banyak 2 disk.
 
-How to Install:  
-1，在函数列表，点右边创建函数  
-2，输入名称，选择运行时语言为PHP7.3，点上传ZIP文件，选择文件，然后点右边的创建函数（这里的ZIP文件不能直接用从Github上下载的ZIP文件，要将它解压后，去掉外层文件夹后，再压缩为ZIP。）  
-3，创建触发器：选API网关，安全认证选None，后端超时（毫秒）将5000改成30000，上面创建分组一下，其它的点点点  
-4，访问触发器给的url，开始安装  
-5，在触发器界面点触发器名称，跳到API网关管理，右边更多URL，可以添加自定义域名，自定义域名后发现还是要 xxxx.com/函数名 来访问，点上方的编辑，第1页不用改，点下一步，请求Path改成/，注意匹配模式是前缀匹配，Method为ANY，然后不用点下一步了，点立即完成，然后去发布生效  
+Bagaimana cara meng-install:
+1. Dalam daftar fungsi, klik di sebelah kanan untuk membuat fungsi
+2. Masukkan nama, pilih bahasa runtime sebagai PHP7.3, klik Unggah file ZIP, pilih file, dan klik fungsi buat di sebelah kanan (file ZIP di sini tidak dapat langsung digunakan sebagai file ZIP yang diunduh dari Github. Setelah mendekompresi, Setelah menghapus folder luar, kompres ke ZIP.)
+3. Buat pemicu: pilih API gateway, pilih Tidak ada untuk otentikasi keamanan, ubah batas waktu backend (milidetik) dari 5000 menjadi 30000, buat grup di atas, dan lainnya sedikit demi sedikit
+4. Kunjungi url yang diberikan oleh pemicu dan mulai penginstalan
+5. Klik nama pemicu pada antarmuka pemicu, lompat ke manajemen gateway API, lebih banyak URL di sebelah kanan, Anda dapat menambahkan nama domain khusus, setelah menyesuaikan nama domain, Anda masih memerlukan xxxx.com/fungsi nama untuk mengakses, klik edit di atas, 1 halaman tidak perlu diubah, klik Berikutnya, minta Path untuk diubah ke /, perhatikan bahwa mode pencocokan adalah pencocokan awalan, Metode APAPUN, lalu tidak perlu mengklik Berikutnya, klik Selesai sekarang, lalu buka terbitkan untuk menerapkannya  
 
 
 # Deploy to Aliyun Function Compute (FC 阿里云函数计算)  
 Official: https://fc.console.aliyun.com/  
-DEMO:  无  
+DEMO:  Tidak
 
-How to Install:  
-1，新建函数 -- HTTP函数  
-2，运行环境选择php7.2  
-3，触发器认证方式选择anonymous，请求方式里面，点一下GET，再点一下POST，最终框框里面有这2个  
-4，上传代码  
-5，触发器中点进去，找到配置自定义域名，点击前往，创建，路径中填 /* ，其它下拉选择。  
-6，访问你的域名，开始安装  
+Bagaimana cara meng-install:
+1. Fungsi baru - Fungsi HTTP
+2. Pilih php7.2 untuk lingkungan operasi
+3. Pilih anonim sebagai metode otentikasi pemicu. Dalam metode permintaan, klik DAPATKAN dan kemudian POSKAN. Ada 2 ini di kotak terakhir
+4. Unggah kode
+5. Klik di pelatuk, temukan konfigurasi nama domain kustom, klik Buka, buat, isi / * di jalur, dan opsi drop-down lainnya.
+6. Kunjungi nama domain Anda dan mulai penginstalan
 
 
 # Deploy to Baidu Cloud Function Compute (CFC 百度云函数计算)  
 Official: https://console.bce.baidu.com/cfc/#/cfc/functions  
-DEMO:  无  
-自定义域名需要另外使用API网关，并备案。  
+DEMO:  Tidak
+Nama domain khusus perlu menggunakan gerbang API secara terpisah dan mencatatnya.
 
-How to Install:  
-1，在函数列表，点创建函数  
-2，创建方式改为空白函数，点下一步  
-3，输入名称，选择运行时为PHP7.2，点下一步  
-4，触发器：下拉选择HTTP触发器，URL路径填 /{filepath+} ，HTTP方法全选，身份验证：不验证，点提交  
-5，进入代码编辑页，编辑类型改上传函数ZIP包，选择文件（这里的ZIP文件不能直接用从Github上下载的ZIP文件，要将它解压后，去掉外层文件夹后，再压缩为ZIP。），开始上传  
-6，点击右边触发器，复制并访问提供的url，开始安装  
+Bagaimana cara meng-install:
+1. Dalam daftar fungsi, klik Buat Fungsi
+2. Ubah metode pembuatan menjadi fungsi kosong, klik Berikutnya
+3. Masukkan nama, pilih PHP7.2 saat dijalankan, dan klik Next
+4. Trigger: drop down untuk memilih HTTP trigger, isi jalur URL / {filepath +}, pilih semua metode HTTP, authentication: no verification, klik submit
+5. Masuk ke halaman pengeditan kode, ubah jenis edit untuk mengunggah fungsi paket ZIP, dan pilih file (file Zip di sini tidak dapat langsung digunakan sebagai file ZIP yang diunduh dari Github. Setelah mendekompresi, hapus folder luar dan kemudian kompres ke ZIP .),Mulai mengunggah  
+6. Klik pemicu di sebelah kanan, salin dan kunjungi url yang disediakan untuk memulai instalasi
 
 
 # Features 特性  
