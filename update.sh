@@ -58,8 +58,8 @@ fi
 
 gitsource='https://github.com/Botmonitor/MYDrive'
 
-OneManagerPath=`cd $(dirname $0);pwd -P`
-cd ${OneManagerPath}
+MYDrivePath=`cd $(dirname $0);pwd -P`
+cd ${MYDrivePath}
 
 git clone ${branch} ${gitsource}
 [ g"$install" == g"1" ] || \mv -b config.php MYDrive/
