@@ -121,18 +121,18 @@
     <!--LoginStart-->
     <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" mdui-dialog="{target: '#login_input'}">
             <a class="mdui-list-item-icon mdui-icon material-icons">account_circle</a>
-            <a class="mdui-list-item-content">登录</a>
+            <a class="mdui-list-item-content">Login</a>
         </li>
     <!--LoginEnd-->
     <!--AdminStart-->
         <li class="mdui-list-item mdui-ripple" href="?setup">
             <a class="mdui-list-item-icon mdui-icon material-icons" href="?setup">account_circle</a>
-            <a class="mdui-list-item-content" href="?setup">管理</a>
+            <a class="mdui-list-item-content" href="?setup">Setting</a>
         </li>
     <!--AdminEnd-->
         <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" onclick="darkmod_use()">
             <a class="mdui-list-item-icon mdui-icon material-icons">brightness_4</a>
-            <a class="mdui-list-item-content">深色模式</a>
+            <a class="mdui-list-item-content">DarkMode</a>
         </li>
 		<li class="mdui-list-item mdui-ripple">
 			<a href="<!--base_path-->" class="mdui-list-item-icon mdui-icon material-icons">home</a>
@@ -146,9 +146,13 @@
         </a>
 <!--MultiDisksEnd-->
 <!--MultiDiskAreaEnd-->
-        <a href="https://github.com/qkqpttgf/OneManager-php" class="mdui-list-item mdui-ripple">
+        <a href="https://github.com/Botmonitor/MYDrive.git" class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
             <div class="mdui-list-item-content">Github</div>
+        </a>
+	  <a href="https://t.me/BMUpdates" class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">message</i>
+            <div class="mdui-list-item-content">Telegram</div>
         </a>
 	</div>
 </div>
@@ -239,17 +243,17 @@
 	<div class="mdui-container-fluid">
     <form action="?admin" method="post">
     <div class="mdui-dialog" id="login_input">
-        <div class="mdui-dialog-title">登录</div>
+        <div class="mdui-dialog-title">Login</div>
         <div class="mdui-dialog-content">
         <div class="mdui-textfield mdui-textfield-floating-label">
             <i class="mdui-icon material-icons">lock</i>
-            <label class="mdui-textfield-label">密码</label>
+            <label class="mdui-textfield-label">Password</label>
             <input class="mdui-textfield-input" type="password"/>
         </div>
         </div>
         <div class="mdui-dialog-actions">
-            <button class="mdui-btn mdui-ripple" mdui-dialog-close>取消</button>
-            <button class="mdui-btn mdui-ripple" type="submit">登录</button>
+            <button class="mdui-btn mdui-ripple" mdui-dialog-close>Cancel</button>
+            <button class="mdui-btn mdui-ripple" type="submit">Login</button>
         </div>
     </div>
     </form>
@@ -427,7 +431,7 @@ $$(function() {
             //url=url.substr(0,url.length-8);
             layer.open({
               type: 2,
-              title: '<a target="_blank" href="'+url+'">'+ $$(this).find('span').text()+'(点击新窗口打开)</a>', //jia,
+              title: '<a target="_blank" href="'+url+'">'+ $$(this).find('span').text()+'(Click to open in new window)</a>', //jia,
               //shadeClose: true,
               move: false,
               shade: false,
