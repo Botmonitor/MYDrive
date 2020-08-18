@@ -56,17 +56,17 @@ if [ g"$install" != g"1" -a g"$update" != g"1" ]; then
   exit
 fi
 
-gitsource='https://github.com/qkqpttgf/OneManager-php'
+gitsource='https://github.com/Botmonitor/MYDrive'
 
 OneManagerPath=`cd $(dirname $0);pwd -P`
 cd ${OneManagerPath}
 
 git clone ${branch} ${gitsource}
-[ g"$install" == g"1" ] || \mv -b config.php OneManager-php/
-\mv -b OneManager-php/* ./
-\mv -b OneManager-php/.[^.]* ./
+[ g"$install" == g"1" ] || \mv -b config.php MYDrive/
+\mv -b MYDrive/* ./
+\mv -b MYDrive/.[^.]* ./
 rm -rf *~
 rm -rf .[^.]*~
-rm -rf OneManager-php
+rm -rf MYDrive
 chmod 666 config.php
 
