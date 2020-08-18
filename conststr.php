@@ -17,6 +17,7 @@ $constStr = [
         'ja' => '日本語',
         'ko-kr' => '한국어',
         'fa' => 'فارسی',
+        'id' => 'Indonesia',
     ],
     'Week' => [
         'en-us' => [
@@ -63,6 +64,15 @@ $constStr = [
             4 => 'پنج شنبه',
             5 => 'جمعه',
             6 => 'شنبه',
+        ],
+        'id' => [
+            0 => 'Minggu',
+            1 => 'Senin',
+            2 => 'Selasa',
+            3 => 'Rabu',
+            4 => 'Kamis',
+            5 => 'Jum`at',
+            6 => 'Sabtu',
         ],
     ],
     'EnvironmentsDescription' => [
@@ -158,6 +168,31 @@ $constStr = [
             'sitename' => 'نام سایت',
             'Onedrive_ver' => 'ورژن Onedrive',
         ],
+        'id' => [
+            'admin' => 'Kata sandi admin, tombol Login tidak akan muncul ketika kosong',
+            'adminloginpage' => 'jika disetel, tombol Login tidak akan ditampilkan, dan halaman login tidak lagi \'?admin\', melainkan \'?{This Value}\'.',
+            'autoJumpFirstDisk' => 'digunakan dalam multi disk, jika 1, lompat otomatis ke disk pertama',
+            'customScript' => '<script> di semua halaman, mis. http beralih ke https',
+            'customCss' => '<style> in <head>',
+            'customTheme' => 'an url of html',
+            'domain_path' => 'lebih banyak domain kustom, formatnya adalah a1.com:/dirto/path1i>b2.com:/path2',
+            'diskname' => 'Nama disk yang ingin Anda tampilkan.',
+            'disktag' => 'Sebuah tag yang digunakan dalam store config dan url.',
+            'disableShowThumb' => 'jika 1, tombol ShowThumbnail tidak akan ditampilkan',
+            'disableChangeTheme' => 'jika 1, tombol pemilihan Tema tidak akan ditampilkan',
+            'downloadencrypt' => '0 atau 1. jika 1, file dalam folder enkripsi dapat diunduh tanpa kata sandi',
+            'background' => 'Tetapkan url sebagai foto latar belakang.',
+            'backgroundm' => 'Tetapkan url sebagai latar belakang di ponsel.',
+            'theme' => 'Pilih Tema',
+            'timezone' => 'setel zona waktu default',
+            'guestup_path' => 'Set guest upload dir, before set this, the files in this dir will show as normal.',
+            'hideFunctionalityFile' => '0 or 1. if 1, some file will not show in list to guest, like readme.md',
+            'passfile' => 'The password of folder(& its childrens) will save in this file.',
+            'domainforproxy' => 'Will replace the https://xxxxx-my.sharepoint.com with this value.Add &Origindomain=xxxxx-my.sharepoint.com at last',
+            'public_path' => 'Show this Onedrive dir when through the long url of API Gateway; public show files less than private.',
+            'sitename' => 'sitename',
+            'Onedrive_ver' => 'Onedrive version',
+        ],
     ],
     'SetSecretsFirst' => [
         'en-us' => 'Set API in Config first! or reinstall.',
@@ -165,6 +200,7 @@ $constStr = [
         'ja' => '最初に環境変数にAPIを設定してください！',
         'ko-kr' => '먼저 환경 변수에서 API를 설정하십시오! 또는 다시 설치하십시오.',
         'fa' => 'ابتدا API را در پیکربندی تنظیم کنید! یا دوباره نصب کنید.',
+        'id' => 'Setel API di Config dulu! atau instal ulang.',
     ],
     'RefreshtoLogin' => [
         'en-us' => '<font color="red">Refresh</font> and login.',
@@ -172,6 +208,7 @@ $constStr = [
         'ja' => 'ページを<font color = "red">更新</font>して、再度ログインしてください',
         'ko-kr' => '페이지를 <font color = "red"> 새로 고침 </ font> 하시고 다시 로그인하십시오',
         'fa' => '<font color="red">رفرش</font> و لاگین.',
+        'id' => '<font color="red">Refresh</font> dan Login.',
     ],
     'AdminLogin' => [
         'en-us' => 'Admin Login',
@@ -179,6 +216,7 @@ $constStr = [
         'ja' => 'ログインを管理する',
         'ko-kr' => '로그인 관리',
         'fa' => 'ورود ادمین',
+        'id' => 'Admin Login',
     ],
     'LoginSuccess' => [
         'en-us' => 'Login Success!',
@@ -186,6 +224,7 @@ $constStr = [
         'ja' => 'ログイン成功、ジャンプ',
         'ko-kr' => '로그인 성공, 점프',
         'fa' => 'ورود با موفقیت انجام شد!',
+        'id' => 'Login Sukses!',
     ],
     'InputPassword' => [
         'en-us' => 'Input Password',
@@ -193,6 +232,7 @@ $constStr = [
         'ja' => 'パスワードを入力してください',
         'ko-kr' => '비밀번호 입력',
         'fa' => 'رمز عبور را وارد کنید',
+        'id' => 'Masukan Kata Sandi',
     ],
     'Login' => [
         'en-us' => 'Login',
@@ -200,6 +240,7 @@ $constStr = [
         'ja' => 'サインイン',
         'ko-kr' => '로그인',
         'fa' => 'ورود',
+        'id' => 'Login',
     ],
     'Encrypt' => [
         'en-us' => 'Encrypt',
@@ -207,6 +248,7 @@ $constStr = [
         'ja' => '暗号化',
         'ko-kr' => '암호화',
         'fa' => 'رمزگذاری',
+        'id' => 'Mengenkripsi',
     ],
     'SetpassfileBfEncrypt' => [
         'en-us' => 'Set \'passfile\' in Environments before encrypt',
@@ -214,6 +256,7 @@ $constStr = [
         'ja' => '最初に暗号化する環境変数にパスファイルを設定します',
         'ko-kr' => '암호화하기 전에 환경 변수에 패스 파일을 설정하십시오',
         'fa' => 'قبل از رمزگذاری \"pass file \" را در محیط تنظیم کنید',
+        'id' => 'Setel \'passfile\' di Lingkungan sebelum dienkripsi',
     ],
     'updateProgram' => [
         'en-us' => 'Update Program',
@@ -221,6 +264,7 @@ $constStr = [
         'ja' => 'ワンクリック更新',
         'ko-kr' => '원 클릭 업데이트',
         'fa' => 'برنامه را به روز کنید',
+        'id' => 'Perbarui program,',
     ],
     'UpdateSuccess' => [
         'en-us' => 'Program update Success!',
@@ -228,6 +272,7 @@ $constStr = [
         'ja' => 'プログラムのアップグレードに成功しました！',
         'ko-kr' => '프로그램 업그레이드 성공!',
         'fa' => 'موفقیت به روز رسانی برنامه!',
+        'id' => 'Pembaruan program Berhasil!',
     ],
     'Setup' => [
         'en-us' => 'Setup',
@@ -235,6 +280,7 @@ $constStr = [
         'ja' => '設定する',
         'ko-kr' => '설정',
         'fa' => 'نصب',
+        'id' => 'Mempersiapkan',
     ],
     'Back' => [
         'en-us' => 'Back',
@@ -242,10 +288,12 @@ $constStr = [
         'ja' => 'back',
         'ko-kr' => '돌아 가기',
         'fa' => 'بازگشت',
+        'id' => 'Kembali',
     ],
     'Theme' => [
         'en-us' => 'Theme',
         'zh-cn' => '主题',
+        'id' => 'Tema',
     ],
     'NotNeedUpdate' => [
         'en-us' => 'Not Need Update',
@@ -253,6 +301,7 @@ $constStr = [
         'ja' => '更新不要',
         'ko-kr' => '업데이트가 필요하지 않습니다',
         'fa' => 'آپدیت لازم نیست',
+        'id' => 'Tidak membutuhkan pembaharuan',
     ],
     'PlatformConfig' => [
         'en-us' => 'Platform Config',
@@ -260,6 +309,7 @@ $constStr = [
         'ja' => 'プラットフォーム変数',
         'ko-kr' => '플랫폼 변수',
         'fa' => 'پیکربندی پلتفرم',
+        'id' => 'konfigurasi platform',
     ],
     'DelDisk' => [
         'en-us' => 'Del This Disk',
@@ -267,6 +317,7 @@ $constStr = [
         'ja' => 'このディスクを削除',
         'ko-kr' => '이 디스크를 삭제',
         'fa' => 'پاک کردن این دیسک',
+        'id' => 'Hapus Penyimpanan Ini',
     ],
     'AddDisk' => [
         'en-us' => 'Add Onedrive Disk',
@@ -274,6 +325,7 @@ $constStr = [
         'ja' => 'Onedriveを追加',
         'ko-kr' => 'Onedrive 추가',
         'fa' => 'اضافه کردن دیسک Onedrive',
+        'id' => 'Tambah pemyimpanan OneDrive',
     ],
     'Home' => [
         'en-us' => 'Home',
@@ -281,14 +333,17 @@ $constStr = [
         'ja' => 'ホーム',
         'ko-kr' => '홈',
         'fa' => 'خانه',
+        'id' => 'Rumah',
     ],
     'Preview' => [
         'en-us' => 'Preview',
         'zh-cn' => '预览',
+        'id' => 'Pratijau',
     ],
     'List' => [
         'en-us' => 'List',
         'zh-cn' => '列表',
+        'id' => 'Daftar',
     ],
     'NeedUpdate' => [
         'en-us' => 'Program can update<br>Click setup in Operate at top.',
@@ -296,6 +351,7 @@ $constStr = [
         'ja' => 'プログラムをアップグレードできます<br>上記の管理メニューで<br>アップグレードする設定ページに入ります',
         'ko-kr' => '프로그램을 업그레이드 할 수 있습니다. <br> 위의 관리 메뉴에서 <br> 업그레이드 할 설정 페이지를 입력하십시오.',
         'fa' => 'برنامه می تواند آپدیت شود<br>روی گزینه نصب در بالای صفحه کلیک کنید.',
+        'en-us' => 'Program dapat diperbaharui <br> Klik setup di Operasi di atas',
     ],
     'Operate' => [
         'en-us' => 'Operate',
@@ -303,6 +359,7 @@ $constStr = [
         'ja' => '管理',
         'ko-kr' => '관리',
         'fa' => 'مدیریت',
+        'id' => 'Operasi',
     ],
     'Logout' => [
         'en-us' => 'Logout',
@@ -310,6 +367,7 @@ $constStr = [
         'ja' => 'ログアウトする',
         'ko-kr' => '로그 아웃',
         'fa' => 'خروج',
+        'id' => 'Keluar',
     ],
     'Create' => [
         'en-us' => 'Create',
@@ -317,6 +375,7 @@ $constStr = [
         'ja' => '新しい',
         'ko-kr' => '새로운',
         'fa' => 'ایجاد کردن',
+        'id' => 'Membuat',
     ],
     'Download' => [
         'en-us' => 'download',
@@ -324,6 +383,7 @@ $constStr = [
         'ja' => 'ダウンロードする',
         'ko-kr' => '다운로드',
         'fa' => 'دانلود',
+        'id' => 'Unduh',
     ],
     'ClicktoEdit' => [
         'en-us' => 'Click to edit',
@@ -331,6 +391,7 @@ $constStr = [
         'ja' => 'クリック後に編集',
         'ko-kr' => '클릭 후 편집',
         'fa' => 'برای ویرایش کلیک کنید',
+        'id' => 'Klik untuk memperbaharui',
     ],
     'Save' => [
         'en-us' => 'Save',
@@ -338,6 +399,7 @@ $constStr = [
         'ja' => '保存する',
         'ko-kr' => '저장',
         'fa' => 'ذخیره',
+        'id' => 'Simpan',
     ],
     'FileNotSupport' => [
         'en-us' => 'File not support preview.',
@@ -345,6 +407,7 @@ $constStr = [
         'ja' => 'ファイル形式はプレビューをサポートしていません',
         'ko-kr' => '파일 형식은 미리보기를 지원하지 않습니다',
         'fa' => 'پیش نمایش برای این فایل پشتیبانی نمی شود.',
+        'id' => 'File tidak mendukung pratijau',
     ],
     'File' => [
         'en-us' => 'File',
@@ -352,6 +415,7 @@ $constStr = [
         'ja' => 'ファイル',
         'ko-kr' => '파일',
         'fa' => 'فایل',
+        'id' => 'file'
     ],
     'ShowThumbnails' => [
         'en-us' => 'Thumbnails',
@@ -359,10 +423,12 @@ $constStr = [
         'ja' => '画像のサムネイル',
         'ko-kr' => '사진 섬네일',
         'fa' => 'تصویر بندانگشتی',
+        'id' => 'Thumbnail',
     ],
     'OriginalPic' => [
         'en-us' => 'OriginalPic',
         'zh-cn' => '原图',
+        'id' => 'Gambar Orisinil',
     ],
     'CopyAllDownloadUrl' => [
         'en-us' => 'CopyAllDownloadUrl',
@@ -370,10 +436,12 @@ $constStr = [
         'ja' => 'すべてのダウンロードリンクをコピー',
         'ko-kr' => '모든 다운로드 링크 복사',
         'fa' => 'کپی از تمام لینک ها',
+        'id' => 'Menyalin semua url Unduhan',
     ],
     'Search' => [
         'en-us' => 'Search',
         'zh-cn' => '搜索',
+        'id' => 'Mencari',
     ],
     'EditTime' => [
         'en-us' => 'EditTime',
@@ -381,6 +449,7 @@ $constStr = [
         'ja' => '変更時間',
         'ko-kr' => '수정 시간',
         'fa' => 'زمان ویرایش',
+        'id' => 'Waktu mengedit',
     ],
     'Size' => [
         'en-us' => 'Size',
@@ -388,6 +457,7 @@ $constStr = [
         'ja' => 'サイズ ',
         'ko-kr' => '사이즈',
         'fa' => 'سایز',
+        'id' => 'Ukuran',
     ],
     'Rename' => [
         'en-us' => 'Rename',
@@ -395,6 +465,7 @@ $constStr = [
         'ja' => '名前を変更',
         'ko-kr' => '이름 바꾸기',
         'fa' => 'تغییر نام',
+        'id' => 'Ganti Nama',
     ],
     'Move' => [
         'en-us' => 'Move',
@@ -402,6 +473,7 @@ $constStr = [
         'ja' => '移動する',
         'ko-kr' => '이동',
         'fa' => 'انتقال',
+        'id' => 'Pindah',
     ],
     'Copy' => [
         'en-us' => 'Copy',
@@ -409,6 +481,7 @@ $constStr = [
         'ja' => 'コピー',
         'ko-kr' => '복사',
         'fa' => 'کپی',
+        'id' => 'Menyalin',
     ],
     'CannotMove' => [
         'en-us' => 'Can not Move!',
@@ -416,6 +489,7 @@ $constStr = [
         'ja' => '動かない！',
         'ko-kr' => '움직일 수 없어!',
         'fa' => 'نمی‌تواند منتقل شود!',
+        'id' => 'Tidak dapat dipindahkan',
     ],
     'Delete' => [
         'en-us' => 'Delete',
@@ -423,6 +497,7 @@ $constStr = [
         'ja' => '削除する',
         'ko-kr' => '삭제',
         'fa' => 'حذف کردن',
+        'id' -> 'Hapus',
     ],
     'PrePage' => [
         'en-us' => 'PrePage',
@@ -430,6 +505,7 @@ $constStr = [
         'ja' => '前へ',
         'ko-kr' => '이전',
         'fa' => 'صفحه قبل',
+        'id' => 'Halaman Sebelumnya',
     ],
     'NextPage' => [
         'en-us' => 'NextPage',
@@ -437,6 +513,7 @@ $constStr = [
         'ja' => '次のページ',
         'ko-kr' => '다음 페이지',
         'fa' => 'صفحه بعد',
+        'id' => ' Halaman Selanjutnya',
     ],
     'Upload' => [
         'en-us' => 'Upload',
@@ -444,14 +521,17 @@ $constStr = [
         'ja' => 'アップロードする',
         'ko-kr' => '업로드',
         'fa' => 'آپلود',
+        'id' => 'Menunggah',
     ],
     'UploadFile' => [
         'en-us' => 'Upload File(s)',
         'zh-cn' => '上传文件',
+        'id' => 'Mengunggah Berkas',
     ],
     'UploadFolder' => [
         'en-us' => 'Upload Folder',
         'zh-cn' => '上传文件夹',
+        'id' => 'mengunggah Map',
     ],
     'FileSelected' => [
         'en-us' => 'Select File',
@@ -459,6 +539,7 @@ $constStr = [
         'ja' => 'ファイルを選択',
         'ko-kr' => '파일 선택',
         'fa' => 'انتخاب فایل',
+        'id' => 'Pilih Berkas',
     ],
     'NoFileSelected' => [
         'en-us' => 'Not Select File',
@@ -466,6 +547,7 @@ $constStr = [
         'ja' => 'ファイルが選択されていません',
         'ko-kr' => '선택된 파일이 없습니다',
         'fa' => 'فایل را انتخاب نکنید',
+        'id' => 'Tidal ada berkas yang dipilih',
     ],
     'Submit' => [
         'en-us' => 'Submit',
@@ -473,6 +555,7 @@ $constStr = [
         'ja' => '確認する',
         'ko-kr' => '확인',
         'fa' => 'ارسال',
+        'id' => 'Kirimkan',
     ],
     'Close' => [
         'en-us' => 'Close',
@@ -480,6 +563,7 @@ $constStr = [
         'ja' => '閉じる',
         'ko-kr' => '닫기',
         'fa' => 'بستن',
+        'id' => 'Tutup',
     ],
     'InputPasswordUWant' => [
         'en-us' => 'Input Password you Want',
@@ -487,6 +571,7 @@ $constStr = [
         'ja' => '設定するパスワードを入力してください',
         'ko-kr' => '설정하려는 비밀번호를 입력하십시오',
         'fa' => 'پسورد خود را وارد کنید',
+        'id' => 'Masukan k\Kata Sandi yang Anda mau',
     ],
     'ParentDir' => [
         'en-us' => 'Parent Dir',
@@ -494,6 +579,7 @@ $constStr = [
         'ja' => '親ディレクトリ',
         'ko-kr' => '부모 디렉토리',
         'fa' => 'مسیر',
+        'id' => 'Diremktori Induk',
     ],
     'Folder' => [
         'en-us' => 'Folder',
@@ -501,6 +587,7 @@ $constStr = [
         'ja' => 'フォルダー',
         'ko-kr' => '폴더',
         'fa' => 'پوشه',
+        'id' => 'Map',
     ],
     'Name' => [
         'en-us' => 'Name',
@@ -508,6 +595,7 @@ $constStr = [
         'ja' => '名前',
         'ko-kr' => '이름',
         'fa' => 'نام',
+        'id' +> 'Nama',
     ],
     'Content' => [
         'en-us' => 'Content',
@@ -515,6 +603,7 @@ $constStr = [
         'ja' => '内容',
         'ko-kr' => '내용',
         'fa' => 'محتوا',
+        'id' => 'Konten',
     ],
     'CancelEdit' => [
         'en-us' => 'Cancel Edit',
@@ -522,6 +611,7 @@ $constStr = [
         'ja' => '編集をキャンセル',
         'ko-kr' => '편집 취소',
         'fa' => 'لغو ویرایش',
+        'id' => 'Batalkan pengeditan',
     ],
     'GetFileNameFail' => [
         'en-us' => 'Fail to Get File Name!',
@@ -529,6 +619,7 @@ $constStr = [
         'ja' => 'ファイル名を取得できませんでした！',
         'ko-kr' => '파일 이름을 가져 오지 못했습니다!',
         'fa' => 'نام فایل به دست نیامد!',
+        'id' => 'Gagal untuk Mendapatkan Nama Berkas',
     ],
     'GetUploadLink' => [
         'en-us' => 'Get Upload Link',
@@ -536,10 +627,12 @@ $constStr = [
         'ja' => 'アップロードリンクを取得',
         'ko-kr' => '업로드 링크 받기',
         'fa' => 'دریافت لینک آپلود',
+        'id' => ' <emdapatkan Link Unggahan',
     ],
     'Calculate' => [
         'en-us' => 'Calculate',
         'zh-cn' => '计算',
+        'id' => 'Kalkullasi',
     ],
     'UpFileTooLarge' => [
         'en-us' => 'The File is too Large!',
@@ -547,6 +640,7 @@ $constStr = [
         'ja' => '超えると、アップロードは終了します。',
         'ko-kr' => '파일이 너무 커서 업로드가 종료되었습니다.',
         'fa' => 'فایل خیلی بزرگ است!',
+        'id' => 'Berkas Terlalu Besar',
     ],
     'UploadStart' => [
         'en-us' => 'Upload Start',
@@ -554,6 +648,7 @@ $constStr = [
         'ja' => 'アップロードを開始',
         'ko-kr' => '업로드 시작',
         'fa' => 'شروع آپلود',
+        'id' => 'Mulai Mengunggah',
     ],
     'UploadStartAt' => [
         'en-us' => 'Start At',
@@ -561,6 +656,7 @@ $constStr = [
         'ja' => 'で開始',
         'ko-kr' => '에서 시작',
         'fa' => 'شروع از',
+        'id' => 'Memulai Di',
     ],
     'ThisTime' => [
         'en-us' => 'This Time',
@@ -568,6 +664,7 @@ $constStr = [
         'ja' => '今回は',
         'ko-kr' => '이번에는',
         'fa' => 'این زمان',
+        'id' => 'Waktu Sekarang',
     ],
     'LastUpload' => [
         'en-us' => 'Last time Upload',
@@ -575,6 +672,7 @@ $constStr = [
         'ja' => '上回は',
         'ko-kr' => '마지막 업로드',
         'fa' => 'آخرین زمان آپلود',
+        'id' -> 'Terakhir Mengunggah',
     ],
     'AverageSpeed' => [
         'en-us' => 'AverageSpeed',
@@ -582,6 +680,7 @@ $constStr = [
         'ja' => '平均速度',
         'ko-kr' => '평균 속도',
         'fa' => 'میانگین سرعت',
+        'id' => 'Rata-Rata Kecepatan',
     ],
     'CurrentSpeed' => [
         'en-us' => 'CurrentSpeed',
@@ -589,6 +688,7 @@ $constStr = [
         'ja' => 'インスタントスピード',
         'ko-kr' => '즉각적인 속도',
         'fa' => 'سرعت فعلی',
+        'id' => 'Kecepatan Saat ini',
     ],
     'Expect' => [
         'en-us' => 'Expect',
