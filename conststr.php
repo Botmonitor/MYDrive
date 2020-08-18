@@ -726,7 +726,7 @@ $constStr = [
         'fa' => 'بارگذاری ناموفق، حاوی #.',
     ],
     'defaultSitename' => [
-        'en-us' => 'OneManager',
+        'en-us' => 'MYDrive',
     ],
     'SavingToken' => [
         'en-us' => 'Saving refresh_token!',
